@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "CustomHelpers";
+}
+@using HtmlHelpersExtensions.Helpers
+@model SampleOrder
+<h2 class="content-block">This page demonstrates how to implement custom helpers with DevExtreme widgets</h2>
+
+<h3 class="content-block">Html Helper that generates Button </h3>
+@(Html.CustomButton("Button 1").ID("button1"))
+@(Html.CustomButton("Button 2").ID("button2"))
+
+<h3 class="content-block">Html Helper that generates a strongly-typed DateBox editor</h3>
+
+@(Html.CustomDateBoxFor(m=>m.OrderDate, EditorApplyValueMode.UseButtons))
+
+<h3 class="content-block">Html Helper that generates two DateBoxes connected with each other</h3>
+@(Html.SynchronizedDateBoxes())

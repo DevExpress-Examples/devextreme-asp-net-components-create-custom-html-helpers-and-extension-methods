@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Default Settings";
+}
+
+@using HtmlHelpersExtensions.Models
+
+<h2 class="content-block">Default Settings defined by extending the DevExtreme configuration builders</h2>
+
+<h3 class="content-block">Default Settings in DevExtreme components</h3>
+
+
+@(Html.DevExtreme().Button().SetDefaults().Text("Button 1"))
+@(Html.DevExtreme().Button().SetDefaults().Text("Button 2"))
+
+@(Html.DevExtreme().DataGrid()
+    .SetDefaults()
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+    .Columns(columns => {
+        columns.Add().DataField("OrderID").DataType(GridColumnDataType.Number);
+        columns.Add().DataField("CustomerName").DataType(GridColumnDataType.String);
+        columns.Add().DataField("OrderDate").DataType(GridColumnDataType.Date).Format(Format.ShortDate);
+    })
+    .Pager(StaticSettings.DefaultPagerConfig)
+)
+
+<h3 class="content-block">Stronly-typed DataGrid with default settings</h3>
+
+@(Html.DevExtreme().DataGrid<SampleOrder>().SetDefaults()
+
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+
+    .Columns(columns => {
+        columns.AddFor(m => m.OrderID);
+        columns.AddFor(m => m.OrderDate);
+        columns.AddFor(m => m.CustomerName);
+    })
+    .Pager(StaticSettings.DefaultPagerConfig)
+
+)

@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "ExtendOptions";
+}
+
+@{
+
+    var list = new List<ColumnSettings>();
+    list.Add(new ColumnSettings() { Caption = "Order", DataType = GridColumnDataType.Number, Field = "OrderID", Format = Format.FixedPoint });
+    list.Add(new ColumnSettings() { Caption = "Customer", DataType = GridColumnDataType.String, Field = "CustomerName" });
+    list.Add(new ColumnSettings() { Caption = "Date", DataType = GridColumnDataType.Date, Field = "OrderDate", Format = Format.MonthAndYear });
+}
+
+<h2 class="content-block">This page demonstrates how to extend settings of nested options: columns, editors, etc.</h2>
+
+
+<h3 class="content-block">Toolbar with an item that has an extended editor</h3>
+
+@(Html.DevExtreme().Toolbar().Items((items)=> {
+    items.Add()
+               .Widget(w => w
+               .Button()
+               .Type(ButtonType.Back)
+
+       ).Location(ToolbarItemLocation.Before);
+
+    items.Add()
+        .Widget(w => w
+        .Button()
+        .Icon("refresh")
+    )
+    .LocateInMenu(ToolbarItemLocateInMenuMode.Auto)
+    .Location(ToolbarItemLocation.Before);
+
+    items.Add()
+        .Widget(w => w
+            .CustomLookupEditor(Html, "Cities", "ID", "Name")
+            .Width(140)
+    )
+    .LocateInMenu(ToolbarItemLocateInMenuMode.Auto)
+    .Location(ToolbarItemLocation.After);
+})
+    )
+
+<h3 class="content-block">DataGrid with dynamic columns</h3>
+@(Html.DevExtreme().DataGrid()
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+    .Columns(columns => {
+        StaticSettings.ConfigureColumns(columns, list);
+    })
+    .Height(400)
+    .Scrolling(s=>s.Mode(GridScrollingMode.Virtual))
+)
+
+<h3 class="content-block">DataGrid with custom extensions for columns: templates and lookup</h3>
+
+@(Html.DevExtreme().DataGrid<SampleOrder>()
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+    .Columns(columns => {
+        columns.AddFor(m => m.OrderID);
+        columns.AddFor(m => m.OrderDate);
+        columns.AddFor(m => m.CustomerName).AddActionColumn(Html);
+        columns.AddFor(m => m.State).AddLookupConfig("States", "ID", "Name");
+        columns.AddFor(m => m.City).AddLookupConfig("Cities", "ID", "Name");
+    })
+    .Height(400)
+    .Scrolling(s => s.Mode(GridScrollingMode.Virtual))
+)

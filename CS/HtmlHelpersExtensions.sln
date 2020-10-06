@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlHelpersExtensions", "HtmlHelpersExtensions\HtmlHelpersExtensions.csproj", "{A6DA95A2-6800-45C6-8BFF-ACAD71BC84AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevExtreme NuGet.config", "DevExtreme NuGet.config", "{5C3F0DCD-25FA-4390-997F-007EE002AE7A}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DA95A2-6800-45C6-8BFF-ACAD71BC84AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DA95A2-6800-45C6-8BFF-ACAD71BC84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DA95A2-6800-45C6-8BFF-ACAD71BC84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DA95A2-6800-45C6-8BFF-ACAD71BC84AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E040AA16-E83B-456D-BE7A-E76EFA6DC6EA}
+	EndGlobalSection
+EndGlobal
