@@ -2,12 +2,12 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [CustomHelpers.cshtml](./CS/HtmlHelpersExtensions/Views/CustomHelpers.cshtml)
-* [DefaultSettings.cshtml](./CS/HtmlHelpersExtensions/Views/DefaultSettings.cshtml)
-* [ExtendOptions.cshtml](./CS/HtmlHelpersExtensions/Views/ExtendOptions.cshtml)
-* [HtmlHelpers.cs](./CS/HtmlHelpersExtensions/Storages/Helpers/HtmlHelpers.cs)
-* [StaticSettings.cs](./CS/HtmlHelpersExtensions/Storages/Helpers/StaticSettings.cs)
-* [ColumnSettings.cs](./CS/HtmlHelpersExtensions/Storages/Helpers/ColumnSettings.cs)
+* [CustomHelpers.cshtml](./CS/HtmlHelpersExtensions/Views/Home/CustomHelpers.cshtml)
+* [DefaultSettings.cshtml](./CS/HtmlHelpersExtensions/Views/Home/DefaultSettings.cshtml)
+* [ExtendOptions.cshtml](./CS/HtmlHelpersExtensions/Views/Home/ExtendOptions.cshtml)
+* [HtmlHelpers.cs](./CS/HtmlHelpersExtensions/Helpers/HtmlHelpers.cs)
+* [StaticSettings.cs](./CS/HtmlHelpersExtensions/Helpers/StaticSettings.cs)
+* [ColumnSettings.cs](./CS/HtmlHelpersExtensions/Helpers/ColumnSettings.cs)
 
 <!-- default file list end -->
 
