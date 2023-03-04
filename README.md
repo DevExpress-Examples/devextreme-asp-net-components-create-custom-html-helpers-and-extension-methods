@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# DevExtreme ASP.NET Components - How to create html helpers and extension methods
+# ASP.NET Components for DevExtreme - How to create html helpers and extension methods
 
 This project demonstrates examples for our Knowledge Base article: [T937535 - DevExtreme ASP.NET Components - How to reuse the same configuration code in many views](https://supportcenter.devexpress.com/ticket/details/t937535/devextreme-asp-net-components-how-to-reuse-the-same-configuration-code-in-many-views)
 
