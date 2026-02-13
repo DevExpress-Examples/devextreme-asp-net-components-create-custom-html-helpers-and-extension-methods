@@ -18,7 +18,7 @@ This project demonstrates examples for our Knowledge Base article: [T937535 - De
 * [StaticSettings.cs](./CS/HtmlHelpersExtensions/Helpers/StaticSettings.cs)
 * [ColumnSettings.cs](./CS/HtmlHelpersExtensions/Helpers/ColumnSettings.cs)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-asp-net-components-create-custom-html-helpers-and-extension-methods&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-asp-net-components-create-custom-html-helpers-and-extension-methods&~~~was_helpful=no)
 
