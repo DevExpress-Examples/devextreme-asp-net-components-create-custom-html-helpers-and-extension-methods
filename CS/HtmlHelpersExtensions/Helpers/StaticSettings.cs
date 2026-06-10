@@ -26,7 +26,7 @@ public static class StaticSettings
         button.Width(300);
         return button;
     }
-    public static Action<DataGridPagerBuilder> DefaultPagerConfig = (builder) =>
+    public static Action<GridPagerBuilder> DefaultPagerConfig = (builder) =>
     {
         builder.ShowPageSizeSelector(true);
         builder.AllowedPageSizes(new[] { 5, 10, 20 });
