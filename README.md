@@ -11,12 +11,12 @@ This project demonstrates examples for our Knowledge Base article: [T937535 - De
 
 ## Files to Review
 
-* [CustomHelpers.cshtml](./CS/HtmlHelpersExtensions/Views/Home/CustomHelpers.cshtml)
-* [DefaultSettings.cshtml](./CS/HtmlHelpersExtensions/Views/Home/DefaultSettings.cshtml)
-* [ExtendOptions.cshtml](./CS/HtmlHelpersExtensions/Views/Home/ExtendOptions.cshtml)
-* [HtmlHelpers.cs](./CS/HtmlHelpersExtensions/Helpers/HtmlHelpers.cs)
-* [StaticSettings.cs](./CS/HtmlHelpersExtensions/Helpers/StaticSettings.cs)
-* [ColumnSettings.cs](./CS/HtmlHelpersExtensions/Helpers/ColumnSettings.cs)
+* [CustomHelpers.cshtml](./ASP.NET%20Core/HtmlHelpersExtensions/Views/Home/CustomHelpers.cshtml)
+* [DefaultSettings.cshtml](./ASP.NET%20Core/HtmlHelpersExtensions/Views/Home/DefaultSettings.cshtml)
+* [ExtendOptions.cshtml](./ASP.NET%20Core/HtmlHelpersExtensions/Views/Home/ExtendOptions.cshtml)
+* [HtmlHelpers.cs](./ASP.NET%20Core/HtmlHelpersExtensions/Helpers/HtmlHelpers.cs)
+* [StaticSettings.cs](./ASP.NET%20Core/HtmlHelpersExtensions/Helpers/StaticSettings.cs)
+* [ColumnSettings.cs](./ASP.NET%20Core/HtmlHelpersExtensions/Helpers/ColumnSettings.cs)
 <!-- feedback -->
 ## Does This Example Address Your Development Requirements/Objectives?
 
